@@ -212,6 +212,10 @@ tempCodeRunnerFile.py
 # Marimo
 marimo/_static/
 marimo/_lsp/
+
+# AgriConnect Project
+model/*.h5
+uploads/
 __marimo__/
 
 # Streamlit
