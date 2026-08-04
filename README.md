@@ -115,11 +115,9 @@ python app.py
 
 ## 📸 Screenshots
 
-- Home Page
-- Crop Disease Detection
-- Prediction Result
-- Weather Information
-- Farmer Marketplace
+The following image shows the output of the AgriConnect application.
+
+![Project Results](results/resultss.png)
 
 ---
 
