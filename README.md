@@ -47,6 +47,10 @@ AgriConnect is an AI-powered smart agriculture platform developed to help farmer
 ### API
 - OpenWeather API
 
+## Model
+
+The trained MobileNetV2 model (`disease_model.h5`) is not included in this repository because it exceeds GitHub's file size limit. You can train the model using `train_model.py` or place the trained model inside the `model/` directory.
+
 ---
 
 ## 📂 Project Structure
