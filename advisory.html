@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Crop Advisory</title>
+
+<style>
+
+body{
+font-family:Segoe UI;
+text-align:center;
+background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef");
+background-size:cover;
+color:white;
+height:100vh;
+}
+
+.overlay{
+background:rgba(0,0,0,0.55);
+height:100vh;
+padding-top:120px;
+}
+
+h1{
+font-size:46px;
+margin-bottom:40px;
+}
+
+select{
+padding:12px;
+font-size:18px;
+width:260px;
+border-radius:6px;
+margin:10px;
+border:none;
+}
+
+button{
+padding:12px 30px;
+font-size:18px;
+background:#15803d;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover{
+background:#22c55e;
+}
+
+.result{
+margin-top:40px;
+font-size:24px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<h1>Crop Advisory System</h1>
+
+<form method="POST">
+
+<select name="soil" required>
+<option value="">Select Soil Type</option>
+<option value="alluvial">Alluvial</option>
+<option value="black">Black</option>
+<option value="red">Red</option>
+<option value="laterite">Laterite</option>
+<option value="loamy">Loamy</option>
+<option value="sandy">Sandy</option>
+</select>
+
+<select name="season" required>
+<option value="">Select Season</option>
+<option value="kharif">Kharif</option>
+<option value="rabi">Rabi</option>
+<option value="zaid">Zaid</option>
+<option value="summer">Summer</option>
+<option value="winter">Winter</option>
+<option value="rainy">Rainy</option>
+</select>
+
+<br><br>
+
+<button type="submit">Get Crop Recommendation</button>
+
+</form>
+
+{% if crops %}
+
+<div class="result">
+
+<h2>Recommended Crops</h2>
+
+<ul style="list-style:none;">
+{% for crop in crops %}
+<li>{{crop}}</li>
+{% endfor %}
+</ul>
+
+</div>
+
+{% endif %}
+
+<br><br>
+
+<a href="/" style="color:white;font-size:20px;">Return to Home Page</a>
+
+</div>
+
+</body>
+</html>

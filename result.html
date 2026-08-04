@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Prediction Result</title>
+
+<style>
+
+body{
+
+margin:0;
+font-family:Arial, sans-serif;
+
+background-image:url("https://images.unsplash.com/photo-1464226184884-fa280b87c399");
+
+background-size:cover;
+background-position:center;
+background-attachment:fixed;
+
+height:100vh;
+
+display:flex;
+align-items:center;
+justify-content:center;
+
+color:white;
+
+}
+
+.container{
+
+background:rgba(0,0,0,0.7);
+
+padding:50px;
+
+border-radius:12px;
+
+text-align:center;
+
+width:520px;
+
+box-shadow:0 0 20px rgba(0,0,0,0.5);
+
+}
+
+h2{
+
+margin-bottom:15px;
+
+}
+
+.result{
+
+font-size:20px;
+
+margin-top:10px;
+
+}
+
+button{
+
+margin-top:30px;
+
+padding:12px 28px;
+
+border:none;
+
+border-radius:6px;
+
+background:#2e7d32;
+
+color:white;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+button:hover{
+
+background:#1b5e20;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Prediction Result</h2>
+
+<p><b>Disease Detected:</b></p>
+
+<p class="result">{{ disease }}</p>
+
+<p><b>Confidence:</b></p>
+
+<p class="result">{{ confidence }}%</p>
+
+<a href="/disease">
+
+<button>Check Another Image</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

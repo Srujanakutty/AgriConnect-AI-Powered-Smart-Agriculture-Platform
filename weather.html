@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Weather</title>
+
+<style>
+
+body{
+
+margin:0;
+
+font-family:Arial;
+
+background:url("https://images.unsplash.com/photo-1500382017468-9049fed747ef") no-repeat center center fixed;
+
+background-size:cover;
+
+height:100vh;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+}
+
+.container{
+
+background:rgba(0,0,0,0.65);
+
+padding:40px;
+
+border-radius:12px;
+
+text-align:center;
+
+color:white;
+
+width:420px;
+
+}
+
+h1{
+font-size:34px;
+margin-bottom:20px;
+}
+
+input{
+
+padding:10px;
+width:80%;
+margin:10px;
+
+}
+
+button{
+
+padding:10px 25px;
+
+background:#007bff;
+
+border:none;
+
+color:white;
+
+font-size:16px;
+
+border-radius:5px;
+
+}
+
+.home{
+
+margin-top:20px;
+
+display:block;
+
+color:#ddd;
+
+text-decoration:none;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Weather Report</h1>
+
+<form method="POST">
+
+<input type="text" name="city" placeholder="Enter City" required>
+
+<br>
+
+<button type="submit">Get Weather</button>
+
+</form>
+
+{% if weather %}
+
+<h2>Temperature : {{weather.temperature}} °C</h2>
+
+<h2>Humidity : {{weather.humidity}} %</h2>
+
+<h2>Weather : {{weather.weather}}</h2>
+
+{% endif %}
+
+<a href="/" class="home">Return to Home Page</a>
+
+</div>
+
+</body>
+
+</html>

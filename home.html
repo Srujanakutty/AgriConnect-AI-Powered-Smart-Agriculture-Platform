@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AgriConnect</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI;
+background:linear-gradient(120deg,#0f5132,#198754,#2e8b57);
+color:white;
+text-align:center;
+}
+
+.navbar{
+display:flex;
+justify-content:space-between;
+padding:20px 60px;
+background:rgba(0,0,0,0.2);
+}
+
+.navbar a{
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:18px;
+}
+
+.title{
+margin-top:120px;
+font-size:48px;
+font-weight:bold;
+}
+
+.subtitle{
+font-size:20px;
+width:60%;
+margin:auto;
+margin-top:20px;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:40px;
+margin-top:80px;
+}
+
+.card{
+background:rgba(0,0,0,0.25);
+padding:30px;
+border-radius:15px;
+width:230px;
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+.card h2{
+font-size:24px;
+}
+
+.card p{
+font-size:16px;
+}
+
+.card button{
+margin-top:15px;
+padding:10px 25px;
+border:none;
+background:#14532d;
+color:white;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+}
+
+.card button:hover{
+background:#22c55e;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+<h2>🌾 AgriConnect</h2>
+
+<div>
+<a href="/">Home</a>
+<a href="/disease">Disease Detection</a>
+<a href="/advisory">Crop Advisory</a>
+<a href="/weather">Weather</a>
+<a href="/marketplace">Marketplace</a>
+</div>
+</div>
+
+
+<div class="title">
+Smart Farming with Artificial Intelligence
+</div>
+
+<div class="subtitle">
+AgriConnect helps farmers detect crop diseases, receive crop
+recommendations, check weather conditions, and sell agricultural
+products through a digital marketplace.
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+<h2>🌿 Disease Detection</h2>
+<p>Upload crop leaf images and detect diseases using AI.</p>
+<a href="/disease"><button>Open</button></a>
+</div>
+
+<div class="card">
+<h2>🌱 Crop Advisory</h2>
+<p>Get crop suggestions based on soil and season.</p>
+<a href="/advisory"><button>Open</button></a>
+</div>
+
+<div class="card">
+<h2>☁ Weather</h2>
+<p>Check temperature, humidity and conditions.</p>
+<a href="/weather"><button>Open</button></a>
+</div>
+
+<div class="card">
+<h2>🛒 Marketplace</h2>
+<p>Farmers can sell crops directly to consumers.</p>
+<a href="/marketplace"><button>Open</button></a>
+</div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Marketplace</title>
+
+<link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+
+<style>
+
+body{
+background:url("https://images.unsplash.com/photo-1506806732259-39c2d0268443");
+background-size:cover;
+}
+
+.product{
+background:white;
+color:black;
+width:350px;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+}
+
+</style>
+
+<script>
+
+function showContact(name,phone,location){
+
+alert("Farmer:"+name+"\nPhone:"+phone+"\nLocation:"+location)
+
+}
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Available Crops</h1>
+
+{% for p in products %}
+
+<div class="product">
+
+<h3>{{p[1]}}</h3>
+
+Price : ₹{{p[2]}} /kg<br>
+Quantity : {{p[3]}} kg<br><br>
+
+<button onclick="showContact('{{p[4]}}','{{p[5]}}','{{p[6]}}')">
+
+Contact Farmer
+
+</button>
+
+</div>
+
+{% endfor %}
+
+<a class="homebtn" href="/">Return to Home Page</a>
+
+</body>
+</html>
