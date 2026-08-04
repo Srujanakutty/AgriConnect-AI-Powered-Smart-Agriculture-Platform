@@ -68,6 +68,11 @@ python train_model.py
 ```
 
 ---
+## Dataset
+
+The complete training dataset is not included in this repository.
+
+A small sample of leaf images is provided for demonstration purposes. To train the model from scratch, replace the sample dataset with the complete dataset while maintaining the same folder structure.
 
 ## 📂 Project Structure
 
